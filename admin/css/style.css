@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    /* position: fixed; */
+    width: 100%;
+    height: 80px;
+    background: #000;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.logo a:hover{
+    color: #ff4757;
+} 
+.home a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.home a:hover{
+    color: #ff4757;
+} 
+.nav-container ul {
+    display: flex;
+    list-style: none;
+}
+.nav-container ul li a{
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+.nav-container ul li a:hover{
+    color: #ff4757;
+}
+
+.second h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+    margin: 20px;
+}
+
+/* css for roles section  */
+.third {
+    width: 100%;
+    height: auto;
+    background: #706d65;
+    margin: 0 auto;
+    padding:  20px;
+    margin-bottom: 20px;
+    
+}
+.third ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third ul li a{
+    display: block;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 25px;
+}
+.button{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.button:hover{
+    color: #fff;
+    background-color: orangered;
+}
+
+
+
+
+/* css for footer section  */
+.footer{
+    background-color: #000;
+    height: 3rem;
+    /* position: absolute; */
+    bottom: 0;
+
+}
+.footer p {
+    color: #fff;
+    text-align: center;
+    /* margin-top: 10px; */
+    padding: 10px;
+}
+
+/* css for category */
+.cat-container h4{
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+    margin: 15px;
+    text-align: center;
+}
+.cat-container .form{
+    margin-top: 20px;
+}
+.form .cat-input {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 30%;
+}
+.cat-input input[type="text"]{
+    width: 50%;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.cat-input input[type="file"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: #fff;
+}
+.cat-input input[type="submit"]{
+    background: #000;
+    color: #fff;
+    padding: 1%;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cat-input input[type="submit"]:hover{
+    background: orangered;
+    color: #fff;
+}
+
+/* css for insert page  */
+.insert-container {
+    background: #878780;
+    padding: 3rem;
+    border-radius: 40px;
+    margin: 1rem;
+}
+.insert-container h1{
+    text-align: center;
+}
+.insert-container .form{
+    margin-top: 20px;
+}
+.form .input-box{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 30%;
+}
+.input-box label{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.input-box input[type="text"]{
+    width: 50%;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.input-box select{
+    width: 50%;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.input-box input[type="file"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: #fff;
+}
+.input-box input[type="submit"]{
+    background: #000;
+    color: #fff;
+    padding: 1%;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input-box input[type="submit"]:hover{
+    background: orangered;
+    color: #fff;
+}
+.input-box img{
+    width: 100px;
+    height: 100px;
+}
+
+/* css for view categories */
+.view-container{
+    background: #878780;
+    padding: 2rem;
+    border-radius: 40px;
+    margin: 1rem;
+}
+.view-container h4{
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+}
+.view-container .table{
+    margin-left: 3rem;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.view-container table,th,td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+.view-container .table thead{
+    background: orangered;
+    height: 3rem;
+}
+.view-container .table td{
+    height: 2.5rem;
+    background: #fff;
+    font-weight: bold;
+}
+.view-container .table input[type="submit"]{
+    background: #000;
+    color: #fff;
+    padding: 1%;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 60%;
+    cursor: pointer;
+}
+.view-container .table input[type="submit"]:hover{
+    background: orangered;
+    color: #fff;
+}
+.view-container .table img{
+    width: 30%;
+    height: 8rem;
+    padding: 5px;
+    object-fit: contain;
+}
+
+/* css for view foods  */
+.food-container{
+    background: #878780;
+    padding: 2rem;
+    border-radius: 40px;
+    margin: 1rem;
+}
+.food-container h4{
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+}
+.food-container .table{
+    margin-left: 3rem;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.food-container table,th,td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+.food-container .table thead{
+    background: orangered;
+    height: 3rem;
+}
+.food-container .table td{
+    height: 2.5rem;
+    background: #fff;
+    font-weight: bold;
+}
+.food-container .table input[type="submit"]{
+    background: #000;
+    color: #fff;
+    padding: 1%;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 60%;
+    cursor: pointer;
+}
+.food-container .table input[type="submit"]:hover{
+    background: orangered;
+    color: #fff;
+}
+.food-container .table img{
+    width: 30%;
+    height: 8rem;
+    padding: 5px;
+    object-fit: contain;
+}
+
+
+
+/* responsive */
+@media only screen and (max-width:1320px){
+    .navbar {
+        padding: 0 50px;
+    }
+} 
+@media only screen and (max-width:1000px){
+    .navbar{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width:400px){
+    .navbar{
+        padding: 0 15px;
+    }
+}
+body{
+    overflow-x: hidden;
+}

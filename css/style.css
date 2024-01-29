@@ -1,0 +1,751 @@
+/* css for all */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+/* css for navbar section */
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: #000;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.toggle-btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.nav-container .links{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.nav-container ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 25px;
+    transition: 0.2s;
+
+}
+.nav-container ul li a:hover{
+    color: #ff4757;
+
+}
+.cart a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.img-responsive{
+    width: 100%;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+a{
+    color: #121212;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+} 
+
+/* css for guest section  */
+.notification{
+    /* margin-top: 6rem; */
+    padding-top: 6rem;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.notification ul{
+    list-style-type: none;
+}
+.notification ul li{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+/* css for search section  */
+.food-search{
+    background-image: url(../images/mechipic2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+.search-btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: orangered;
+    color: #fff;
+    cursor: pointer;
+}
+.search-btn:hover{
+    color: #fff;
+    background-color: #000;
+}
+.searched-food {
+    background: orangered;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+/* css for categories */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.cat-container{
+    width: 25%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16),0 10px 10px rgba(0, 0, 0, 0.22);
+    background: #f2f2f2;
+}
+.cat-container img{
+    width: 225px;
+    height: 225px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin: 2%;
+    text-align: center;
+}
+.float-container{
+    position: relative;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+.text-white{
+    color: white;
+}
+.img-curve{
+    border-radius: 15px;
+}
+.view-btn{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #000;
+}
+.view-btn:hover{
+    background-color: orangered;
+    color: #fff;
+}
+@media (max-width:950px){
+    .cat-container{
+        width: 45%;
+    }
+}
+@media (max-width:700px){
+    .cat-container{
+        width: 100%;
+    }
+}
+
+/* css for food menu section  */
+.food-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.food-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+.order-btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.order-btn:hover{
+    color: #fff;
+    background-color: orangered;
+}
+
+/* css for social section  */
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+/* css for footer section  */
+.footer{
+    background-color: #000;
+    height: 3.5rem;
+}
+.footer p {
+    color: #fff;
+}
+
+/* css for registration form */
+.registration{
+    padding: 1rem;
+    margin: 1rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registration .form {
+    background: #6ec2b5;
+    padding: 3rem 7rem;
+    border-radius: 40px;
+    width: 60%;
+}
+.form h1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form .input-box{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.input-box label{
+    font-size: 18px;
+    font-weight: bold;
+}
+.input-box input[type="text"],input[type="email"],input[type="password"]{
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.input-box input[type="submit"]{
+    background: #000;
+    width: 30%;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.input-box input[type="submit"]:hover{
+    background: orangered;
+    color: #fff;
+}
+.input-box p{
+    font-size: 14px;
+    font-weight: bold;
+}
+.input-box a{
+    color: red;
+}
+.input-box a:hover{
+    color: blue;
+}
+
+/* css for order page  */
+.orders{
+    padding: 1rem;
+    margin: 1rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orders .form{
+    background: #6ec2b5;
+    width: 70%;
+    padding: 4rem;
+    border-radius: 20px;
+}
+.orders .form h5{
+    font-size: 20px;
+    text-align: center;
+    color: red;
+    margin-bottom: 1rem;
+}
+.orders .form .para1{
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+    margin-bottom: 10px;
+}
+.orders .form .food_details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.food_details img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.food_details .food-desc{
+    padding-right: 18rem;
+}
+.food_details .food-desc .desc{
+    font-size: 16px;
+    font-weight: bold;
+}
+.desc span{
+    color: blue;
+}
+.delivery_details{
+    padding-top: 1rem;
+}
+.delivery_details #id1{
+    font-weight: bold;
+    font-size: 18px;
+    color: green;
+    text-align: left;
+}
+.delivery_details select{
+    width: 50%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+}
+
+/* css for profile page  */
+.profile{
+    margin: 2rem;
+    border-radius: 20px;
+    height: auto;
+}
+.profile .roles{
+    background: #b5bab6;
+    height: auto;
+    margin: 1rem;
+    padding:  20px;
+    border-radius: 10px;
+}
+.roles .list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.list li .link-btn{
+    display: block;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+.list li .link-btn:hover{
+    color: #000;
+    background-color: orangered;
+}
+
+/* css for edit_account */
+.edit-account{
+    padding: 1rem;
+    margin: 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edit-account .form {
+    background: #6ec2b5;
+    padding: 3rem 7rem;
+    border-radius: 40px;
+    width: 60%;
+}
+
+/* css for user orders page  */
+.view-orders{
+    background: #878780;
+    padding: 2rem;
+    border-radius: 40px;
+    margin: 1rem;
+}
+.view-orders .table{
+    width: 100%;
+    text-align: center;
+}
+.view-orders table,th,td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+.table thead{
+    background: orangered;
+    height: 3rem;
+}
+.table td{
+    height: 2.5rem;
+    background: #fff;
+    font-weight: bold;
+}
+.table input[type="submit"]{
+    background: #000;
+    color: #fff;
+    padding: 1%;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 60%;
+    cursor: pointer;
+}
+.table input[type="submit"]:hover{
+    background: orangered;
+    color: #fff;
+}
+
+/* css for payment */
+.payment{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payment .payment-form{
+    /* background: #878780; */
+    background: skyblue;
+    padding: 5rem;
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+.payment-form h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: red;
+}
+.payment-form .input-field{
+    margin-bottom: 10px;
+}
+.input-field label{
+    text-align: center;
+}
+.input-field input[type="text"],select{
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    border:2px solid black;
+    border-radius: 10px;
+}
+.input-field .confirm_btn{
+    margin-top: 10px;
+    padding: 10px 30px;
+    background: orangered;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.input-field .confirm_btn:hover{
+    background: black;
+    color: white;
+}
+
+/* css for delete-account  */
+.delete-account{
+    display: flex;
+    justify-content: center;
+}
+.delete-account .delete-form{
+    margin-top: 10px;
+    padding: 5rem;
+    background: skyblue;
+    border-radius: 20px;
+}
+.delete-form .delete-div{
+    margin: 10px;
+}
+.delete-account .delete-form .delete-btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.delete-form .delete-btn:hover{
+    background: orangered;
+    color: #fff;
+}
+
+@media (max-width:700px){
+    .orders{
+        width: 100%;
+    }
+    .orders .form {
+        width: 100%;
+        padding: 3rem;
+    }
+    .orders .form h5{
+        font-size: 15px;
+        text-align: center;
+        color: red;
+        margin-bottom: 1rem;
+    }
+    .orders .form .para1{
+        font-size: 15px;
+    }
+    .orders .form .food_details{
+        display: inline;
+        margin-bottom: 1rem;
+        width: 100%;  
+    }
+    .food_details .food-desc{
+        padding: 10px;
+    }
+    .input-box input[type="submit"]{
+        width: 60%;
+        padding: 10px 10px;
+    }
+    .delivery_details select{
+        width: 100%;
+    }
+    .edit-account{
+        padding: 10px;
+        margin: 10px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .edit-account .form {
+        background: #6ec2b5;
+        padding: 3rem;
+        border-radius: 20px;
+        width: 100%;
+    }
+    .form .input-box{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .input-box label{
+        font-weight: bold;
+    }
+    
+}
+
+
+/* CSS for Mobile Size or Smaller Screen (Responsive)*/
+@media only screen and (max-width:1320px){
+    .navbar {
+        padding: 0 50px;
+    }
+
+} 
+
+@media only screen and (max-width:1000px){
+    .navbar{
+        padding: 0 30px;
+    }
+    .orders .form .food_details{
+        display: inline;
+        margin-bottom: 1rem;
+        width: 100%;  
+    }
+    .food_details .food-desc{
+        padding: 10px;
+    }
+    .input-box input[type="submit"]{
+        width: 60%;
+        padding: 10px 10px;
+    }
+    .delivery_details select{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .toggle-btn{
+        display: block;
+        cursor: pointer;
+    }
+    .toggle-btn .line{
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin: 6px 0;
+    }
+    .nav-container {
+        height: 0;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #000;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-container.active{
+        height: 400px;
+    }
+    .nav-container .links{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-container.active ul {
+        opacity: 1;
+    }
+    .nav-container ul li a {
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    .roles .list{
+        list-style: none;
+        display: inline;
+        
+    }
+    .list li{
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width:900px){
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+    .food-search{
+        padding: 10% 0;
+    }
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+    
+
+}
+
+    
+
